@@ -156,7 +156,7 @@ class indice extends clsCadastro
         AND mt.ref_cod_matricula = m.cod_matricula
         AND m.ativo = 1
         AND mt.ativo = 1
-        AND aprovado IN (1, 2, 6, 9)
+        AND aprovado IN (1, 2, 4, 6, 8, 9)
         AND ano = %d
       ORDER BY
         mt.ativo DESC, nome", $this->ref_cod_turma, $this->ano);
