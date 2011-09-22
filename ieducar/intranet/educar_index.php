@@ -38,12 +38,13 @@ class detalhe extends clsDetalhe
   function Gerar()
   {
     global $id_pessoa;
-
+var_dump($id_pessoa);
     $this->titulo = 'Escola - Visão geral';
 
     // Escola em que o servidor está alocado
     $servidorAlocacao = new clsPmieducarServidorAlocacao();
     $servidores = $servidorAlocacao->lista(NULL, 1, NULL, NULL, NULL, $id_pessoa);
+    
     if (1 == count($servidores)) {
       $codEscola = $servidores[0]['ref_cod_escola'];
     }

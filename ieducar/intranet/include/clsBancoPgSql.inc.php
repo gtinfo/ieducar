@@ -865,18 +865,5 @@ abstract class clsBancoSQL_
     }
   }
 
-  /**
-   * Gera o arquivo de backup
-   */
-
-    public function gerarBackup() {
-	$arquivo = "tmp/backup_ieducar_arapiraca.psql";
-
-	$sql = "echo '{$this->strSenha}' | pg_dump -O -x --disable-triggers --format=c -U{$this->strUsuario} -h{$this->strHost} {$this->strBanco} > $arquivo 2>&1";
-	shell_exec("$sql");
-
-	return $arquivo;
-    }
-
 
 }

@@ -50,7 +50,7 @@
 	<body onload="loginpage_onload();">
 		<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
 			<tr>
-				<td valign="top" align="left" width="211"><img src="imagens/nvp_top_webmail.jpg" border="0" alt="Intranet" title="Intranet" /></td>
+				<td valign="top" align="left" width="211"><div style="margin:20px"><img src="imagens/gtinfo.png" border="0"  alt="Intranet" title="Intranet" /></div></td>
 				<td style="padding-left:10px;">
 					<br /><br /><br /><br /><br />
 					<br /><!-- #&ERROLOGIN&# --><br /><br />
